@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Menu</title>
+        <style>
+            body {
+                font-family: "freight_sansbook", sans-serif;
+                font-size: 15px;
+            }
+
+            #back {
+                position: absolute;
+                top: 0.5rem;
+                left: 1rem;
+            }
+
+            #back .icon {
+                position: absolute;
+                top: 3px;
+                left: 1px;
+                background-image: url("https://api.iconify.design/material-symbols/arrow-back-rounded.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 24px;
+                height: 24px;
+            }
+
+            #back button {
+                height: 30px;
+                width: 70px;
+                padding-left: 22px;
+            }
+
+            #logo-container {
+                position: absolute;
+                top: 4rem;
+                left: 10%;
+            }
+
+            #logo-text {
+                font-family: "freight_sansbold", sans-serif;
+                position: relative;
+                top: -10px;
+                left: -10px;
+                font-size: 25px;
+                font-weight: 600;
+                font-stretch: condensed;
+                color: #264e72;
+            }
+
+            #menu-container {
+                position: absolute;
+                top: 9rem;
+                left: 50%;
+                transform: translateX(-50%);
+
+                width: 100%;
+                height: 60px;
+                padding: 3px 0 1px 0;
+
+                background-color: #00aef0;
+            }
+
+            #buttons-container {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                padding-left: 2px;
+                margin: -1px 0 -1px 0;
+
+                width: 885px;
+                height: 60px;
+
+                text-align: center;
+            }
+
+            .button-position {
+                display: inline;
+            }
+
+            .options {
+                display: inline;
+                position: relative;
+                top: 22px;
+
+                padding: 22px 1rem 21px 1rem;
+                margin: 0px -2px 0px -3px;
+                border-left: 1px solid lightgray;
+                color: white;
+
+                cursor: pointer;
+            }
+
+            .options:hover {
+                background-color: white;
+                color: #00aef0;
+            }
+
+            .options:last-child {
+                border-right: 1px solid lightgray;
+            }
+
+            .hover-content {
+                position: absolute;
+                opacity: 0;
+                scale: 0;
+                width: 880px;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 62px;
+
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                transition: opacity 350ms;
+            }
+
+            #opc1:hover #opc1-content {
+                opacity: 1;
+                scale: 1;
+            }
+
+            #opc2:hover #opc2-content {
+                opacity: 1;
+                scale: 1;
+            }
+
+            #opc3:hover #opc3-content {
+                opacity: 1;
+                scale: 1;
+            }
+
+            #opc4:hover #opc4-content {
+                opacity: 1;
+                scale: 1;
+            }
+
+            #opc5:hover #opc5-content {
+                opacity: 1;
+                scale: 1;
+            }
+
+            .opc-content-secs {
+                font-size: 13px;
+                display: inline-block;
+                text-align: left;
+                vertical-align: top;
+                width: 25%;
+
+                margin: 1rem 0 1rem 0;
+                padding: 0 2rem 0 2rem;
+
+                list-style-type: none;
+            }
+
+            .opc-content-secs h4 {
+                color: #00aef0;
+            }
+
+            .opc-content-secs button {
+                vertical-align: bottom;
+                font-size: 14px;
+                font-weight: 900;
+                background: none;
+                color: rgb(248, 148, 32);
+
+                border: 2px solid rgb(248, 148, 32);
+                padding: 0.5rem;
+
+                cursor: pointer;
+                transition: color 250ms, background-color 250ms;
+            }
+
+            .opc-content-secs button:hover {
+                background: rgb(248, 148, 32);
+                color: white;
+            }
+
+            .opc-content-secdiv {
+                border-right: 1px solid lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="back">
+            <div class="icon"></div>
+            <button onclick="window.location.href = '../../'">Volver</button>
+        </div>
+
+        <div id="logo-container">
+            <img id="logo" src="./logo.png" />
+            <span id="logo-text">Banco Frederick Escarraman</span>
+        </div>
+
+        <div id="menu-container">
+            <div id="buttons-container">
+                <div id="opc1" class="button-position">
+                    <div class="options">CUENTAS</div>
+                    <div id="opc1-content" class="hover-content">
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>AHORRO</h4>
+                            <li>Cuenta de Ahorro en Pesos</li>
+                            <li>Cuenta Ahorro Más</li>
+                            <li>Cuenta de Ahorro Infantil</li>
+                            <li>Cuenta de Ahorro Infantil en Dólares</li>
+                            <li>Cuenta de Ahorro Preserva</li>
+                            <li>Cuenta de Ahorro en Dólares</li>
+                            <li>Cuenta de Ahorro en Euros</li>
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>CORRIENTES</h4>
+                            <li>Cuenta Corriente Personal</li>
+                            <li>Cuenta Corriente Más Personal</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs">
+                            <h4>SOLUCIONES DIGITALES</h4>
+                            <li>Cuenta MIO Banreservas</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="opc2" class="button-position">
+                    <div class="options">INVERSIONES</div>
+                    <div id="opc2-content" class="hover-content">
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>CERTIFICADOS</h4>
+                            <li>Certificado Financiero en Pesos</li>
+                            <li>Depósito a Plazo en dólares y euros</li>
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs">
+                            <h4>MERCADO DE VALORES</h4>
+                            <li>Inversiones en Títulos-Valores</li>
+                            <li>Fondos de Inversión</li>
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs"></div>
+                    </div>
+                </div>
+
+                <div id="opc3" class="button-position">
+                    <div class="options">TARJETAS</div>
+                    <div id="opc3-content" class="hover-content">
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>DÉBITO</h4>
+                            <li>Mastercard Débito Dólares</li>
+                            <li>Mastercard Débito Gold</li>
+                            <li>Mastercard Débito Platinum</li>
+                            <li>Mastercard Débito Standard</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs">
+                            <h4>CRÉDITO</h4>
+                            <li>Tarjeta de crédito Visa Ser</li>
+                            <li>Credimás Banreservas</li>
+                            <li>Mastercard Black</li>
+                            <li>Visa Flotilla Personal</li>
+                            <li>Visa Infinite</li>
+                            <li>Visa Platinum Universe</li>
+                            <li>Visa y Mastercard Clásica</li>
+                            <li>Visa y Mastercard Gold</li>
+                            <li>Visa y Mastercard Platinum</li>
+                            <li>Tarjeta de crédito Preserva</li>
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs"></div>
+                    </div>
+                </div>
+
+                <div id="opc4" class="button-position">
+                    <div class="options">PRESTAMOS</div>
+                    <div id="opc4-content" class="hover-content">
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>PERSONALES</h4>
+                            <li>Préstamos de Consumo</li>
+                            <li>Vacaciones Felices</li>
+                            <li>Educación y Cultura</li>
+                            <li>Empleado Feliz</li>
+                            <li>Sueldo Más</li>
+                            <li>Pensionado Feliz</li>
+                            <li>Préstamos en Dólares</li>
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>HIPOTECARIOS</h4>
+                            <li>Préstamos Hipotecarios</li>
+                            <li>Préstamos Hipotecarios para residentes en el extranjero</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs">
+                            <h4>VEHICULOS</h4>
+                            <li>Préstamos Vehículos Nuevos</li>
+                            <li>Préstamos Vehículos Usados</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="opc5" class="button-position">
+                    <div class="options">SEGUROS</div>
+                    <div id="opc5-content" class="hover-content">
+                        <div class="opc-content-secs opc-content-secdiv">
+                            <h4>SEGUROS DE PERSONAS</h4>
+                            <li>Accidentes Personales</li>
+                            <li>Asistencia Funeraria</li>
+                            <li>Seguro Médico Internacional Just</li>
+                            <li>Viajes Reservas</li>
+                            <li>Vida Individual en Pesos y Dólares</li>
+                            <li>Vida Reservas</li>
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs">
+                            <h4>RIEGOS GENERALES</h4>
+                            <li>Rescate De Prisa</li>
+                            <li>Vehículos de Motor</li>
+                            <li>Vivienda Segura</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <button>Ver Todos</button>
+                        </div>
+
+                        <div class="opc-content-secs"></div>
+                    </div>
+                </div>
+
+                <div id="opc6" class="button-position">
+                    <div class="options">REMESAS, IMPUESTOS Y SERVICIOS</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
