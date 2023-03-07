@@ -1,7 +1,6 @@
 {
   "tabWidth": 4,
   "bracketSameLine": true,
-  "parser": "html",
   "bracketSpacing": false,
   "jsxBracketSameLine": true,
   "singleAttributePerLine": false,

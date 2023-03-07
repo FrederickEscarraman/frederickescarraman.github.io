@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cedula</title>
+
+        <link rel="stylesheet" href="main.css" />
+        <script src="LUHN.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="back">
+            <div class="icon"></div>
+            <button onclick="window.location.href = '../../'">Volver</button>
+        </div>
+
+        <div id="container">
+            <input id="value" type="number" />
+            <button id="submit" onclick="check()">Comprobar</button>
+            <p id="result"></p>
+        </div>
+    </body>
+</html>
