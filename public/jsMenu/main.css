@@ -1,0 +1,174 @@
+body {
+    font-family: "freight_sansbook", sans-serif;
+    font-size: 15px;
+}
+
+#back {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+#back .icon {
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background-image: url("https://api.iconify.design/material-symbols/arrow-back-rounded.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+#back button {
+    height: 30px;
+    width: 70px;
+    padding-left: 22px;
+}
+
+#logo-container {
+    position: absolute;
+    top: 4rem;
+    left: 10%;
+}
+
+#logo-text {
+    font-family: "freight_sansbold", sans-serif;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    font-size: 25px;
+    font-weight: 600;
+    font-stretch: condensed;
+    color: #264e72;
+}
+
+#menu-container {
+    position: absolute;
+    top: 9rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 60px;
+    padding: 3px 0 1px 0;
+
+    background-color: #00aef0;
+}
+
+#buttons-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 2px;
+    margin: -1px 0 -1px 0;
+
+    width: 885px;
+    height: 60px;
+
+    text-align: center;
+}
+
+.button-position {
+    display: inline;
+}
+
+.options {
+    display: inline;
+    position: relative;
+    top: 22px;
+
+    padding: 22px 1rem 21px 1rem;
+    margin: 0px -2px 0px -3px;
+    border-left: 1px solid lightgray;
+    color: white;
+
+    cursor: pointer;
+}
+
+.options:hover {
+    background-color: white;
+    color: #00aef0;
+}
+
+.options:last-child {
+    border-right: 1px solid lightgray;
+}
+
+.hover-content {
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+    width: 880px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 62px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: opacity 350ms;
+}
+
+#opc1:hover #opc1-content {
+    opacity: 1;
+    scale: 1;
+}
+
+#opc2:hover #opc2-content {
+    opacity: 1;
+    scale: 1;
+}
+
+#opc3:hover #opc3-content {
+    opacity: 1;
+    scale: 1;
+}
+
+#opc4:hover #opc4-content {
+    opacity: 1;
+    scale: 1;
+}
+
+#opc5:hover #opc5-content {
+    opacity: 1;
+    scale: 1;
+}
+
+.opc-content-secs {
+    font-size: 13px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 25%;
+
+    margin: 1rem 0 1rem 0;
+    padding: 0 2rem 0 2rem;
+
+    list-style-type: none;
+}
+
+.opc-content-secs h4 {
+    color: #00aef0;
+}
+
+.opc-content-secs button {
+    vertical-align: bottom;
+    font-size: 14px;
+    font-weight: 900;
+    background: none;
+    color: rgb(248, 148, 32);
+
+    border: 2px solid rgb(248, 148, 32);
+    padding: 0.5rem;
+
+    cursor: pointer;
+    transition: color 250ms, background-color 250ms;
+}
+
+.opc-content-secs button:hover {
+    background: rgb(248, 148, 32);
+    color: white;
+}
+
+.opc-content-secdiv {
+    border-right: 1px solid lightgrey;
+}
