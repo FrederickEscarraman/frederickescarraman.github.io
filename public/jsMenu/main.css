@@ -53,7 +53,7 @@ body {
     height: 60px;
     padding: 3px 0 1px 0;
 
-    background-color: #00aef0;
+    background-color: darkorange;
 }
 
 #buttons-container {
@@ -88,7 +88,7 @@ body {
 
 .options:hover {
     background-color: white;
-    color: #00aef0;
+    color: darkorange;
 }
 
 .options:last-child {
@@ -147,7 +147,7 @@ body {
 }
 
 .opc-content-secs h4 {
-    color: #00aef0;
+    color: darkorange;
 }
 
 .opc-content-secs button {
@@ -155,9 +155,9 @@ body {
     font-size: 14px;
     font-weight: 900;
     background: none;
-    color: rgb(248, 148, 32);
+    color: #00aef0;
 
-    border: 2px solid rgb(248, 148, 32);
+    border: 2px solid #00aef0;
     padding: 0.5rem;
 
     cursor: pointer;
@@ -165,7 +165,7 @@ body {
 }
 
 .opc-content-secs button:hover {
-    background: rgb(248, 148, 32);
+    background: #00aef0;
     color: white;
 }
 
