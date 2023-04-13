@@ -1,0 +1,98 @@
+#back {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+#back .icon {
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background-image: url("https://api.iconify.design/material-symbols/arrow-back-rounded.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+#back button {
+    height: 30px;
+    width: 70px;
+    padding-left: 22px;
+}
+
+#form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    width: 80%;
+    height: 80%;
+
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: -0.5rem;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.part {
+    display: none;
+}
+
+.part[show] {
+    display: block;
+}
+
+.form-block {
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    margin-bottom: 2rem;
+}
+
+part1 .form-block {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+}
+
+input,
+select {
+    width: 70%;
+}
+
+#log {
+    text-align: left;
+}
+
+divider {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid darkgrey;
+
+    margin: 1rem 0 1rem 0;
+}
+
+#prev {
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+}
+
+#next {
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+}
