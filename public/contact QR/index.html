@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Contacto QR</title>
+
+        <link rel="stylesheet" href="main.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="back">
+            <div class="icon"></div>
+            <button onclick="window.location.href = '../../'">Volver</button>
+        </div>
+
+        <div id="form">
+            <label>Nombre</label>
+            <input name="name" type="text" />
+
+            <label>Apellido</label>
+            <input name="lastname" type="text" />
+
+            <label>Correo</label>
+            <input name="email" type="email" />
+
+            <label>Numero Telefonico</label>
+            <input name="phone" type="text" />
+
+            <button onclick="generateQR()">Crear QR</button>
+
+            <div id="qr"></div>
+        </div>
+    </body>
+</html>

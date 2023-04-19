@@ -1,0 +1,61 @@
+#back {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+#back .icon {
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background-image: url("https://api.iconify.design/material-symbols/arrow-back-rounded.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+#back button {
+    height: 30px;
+    width: 70px;
+    padding-left: 22px;
+}
+
+#form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 85%;
+    text-align: center !important;
+
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+#form label {
+    display: block;
+}
+
+#form input {
+    width: 80%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#qr {
+    display: none;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
