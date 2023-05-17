@@ -1,0 +1,41 @@
+#nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 60px;
+    width: 100%;
+    background-color: rgb(255, 99, 71);
+    border-bottom: 1px solid black;
+
+    text-align: center;
+    z-index: 1;
+}
+
+#nav-menu button {
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+    border-left: 1px solid white !important;
+
+    cursor: pointer;
+}
+
+#nav-menu button:last-child {
+    border-right: 1px solid white !important;
+}
+
+#nav-menu button:hover,
+#nav-menu button[current] {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#current-page {
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    height: calc(100% - 64px);
+    width: 100%;
+}

@@ -3,29 +3,6 @@ body {
     font-size: 15px;
 }
 
-#back {
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
-}
-
-#back .icon {
-    position: absolute;
-    top: 3px;
-    left: 1px;
-    background-image: url("https://api.iconify.design/material-symbols/arrow-back-rounded.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 24px;
-    height: 24px;
-}
-
-#back button {
-    height: 30px;
-    width: 70px;
-    padding-left: 22px;
-}
-
 #logo-container {
     position: absolute;
     top: 4rem;
