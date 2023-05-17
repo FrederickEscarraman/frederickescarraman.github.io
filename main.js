@@ -2,7 +2,7 @@ const iframe = document.getElementById("current-page");
 
 // JSON con elementos del menu
 const menu = [
-    {id: 0, name: "Portada", link: "/public/_index/index.html"},
+    {id: 0, name: "Portada", link: "/public/index/index.html"},
     {id: 1, name: "Biografia", link: "/public/bio/index.html"},
     {id: 2, name: "Etiquetas", link: "/public/tags/index.html"},
     {id: 3, name: "Menu", link: "/public/menu/index.html"},
